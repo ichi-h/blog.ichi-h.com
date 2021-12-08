@@ -1,1 +1,11 @@
 /* Add your custom styles adjustments here */
+
+.positive {
+  color: #fb645d;
+  font-weight: bold;
+}
+
+.negative {
+  color: #088ed6;
+  font-weight: bold;
+}

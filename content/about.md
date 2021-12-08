@@ -1,16 +1,26 @@
 +++
-title = "About Hugo"
-date = "2014-04-09"
+title = "About"
+date = "2021-12-08"
 +++
 
-Hugo is a static site engine written in Go.
+## このブログについて
 
+このブログでは、<b>「読んで後悔させないコンテンツ作り」</b>をモットーとし、サイト運営者であるichiが音楽やプログラミングに関連した技術解説や、制作物の紹介などを行います。
 
-It makes use of a variety of open source projects including:
+音楽方面では、これまでの音楽制作で培った経験や学術的な視点をベースに、流行に左右されない汎用性の高い情報の発信を心掛けています。
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+またプログラミング方面では、ツールの使い方やテクニックの紹介といった表面的な内容だけに留まらず、「なぜそうしたのか？」という理由や思考の解説から、プログラム全体の設計思想などの抽象的な内容まで踏み込んだ情報を発信していきます。
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+## ichiについて
+
+私は、現在大学を休学している学生です。同人方面で作編曲のお手伝いをしたり、プログラミングで様々な便利アプリやゲーム制作などを行っています。
+
+座右の銘は<span class="positive">「ないもの作ろう」</span>です。  
+自分が欲しいモノ、自分や世の中をワクワク・感動させるモノ、超絶くだらないモノ……  
+音楽やプログラミング問わず、ありとあらゆるものを作ることが好きです。
+
+何かを創ることは私にとって生き甲斐です。  
+創作が嫌いだった時期もありましたが、でも気がつくと何かを作っています。  
+なぜなら、やっぱり創作が楽しいから。<span class="positive">めちゃくちゃ楽しいから。</span>
+
+そして今日もまた、面白い何かを作れないかと模索しています。
