@@ -5,7 +5,7 @@ theme = "hugo_theme_pickles"
 copyright = "Copyright &copy; 2021 Ichi"
 
 # Google Analytics API key.
-googleAnalytics = "Your Google Analytics tracking id"
+# googleAnalytics = "Your Google Analytics tracking id"
 
 [params]
   paginate = 10
@@ -18,38 +18,38 @@ googleAnalytics = "Your Google Analytics tracking id"
   custom_css = ["/css/custom.css"]
   # Social accounts. Link to these accounts are displayed in the header and
   # footer
-  twitter = "Your Twitter username"
-  facebook = "Your Facebook username"
-  instagram = "Your Instagram username"
-  github = "Your GitHub username"
-  gitlab = "Your GitLab username"
-  npm = "Your npm username"
-  codepen = "Your CodePen username"
-  dribbble = "Your Dribbble username"
-  fivehundredpx = "Your 500px username" # 500px
-  flickr = "Your Flickr username"
-  pinterest = "Your Pinterest username"
-  tumblr = "Your Tumblr username"
-  vimeo = "Your Vimeo username"
-  youtube = "Your YouTube username"
-  linkedin = "Your LinkedIn username"
-  medium = "Your Medium username"
-  strava = "Your Strava userid"
+  twitter = "ichi_h3"
+  # facebook = "Your Facebook username"
+  # instagram = "Your Instagram username"
+  github = "ichi-h"
+  # gitlab = "Your GitLab username"
+  # npm = "Your npm username"
+  # codepen = "Your CodePen username"
+  # dribbble = "Your Dribbble username"
+  # fivehundredpx = "Your 500px username" # 500px
+  # flickr = "Your Flickr username"
+  # pinterest = "Your Pinterest username"
+  # tumblr = "Your Tumblr username"
+  # vimeo = "Your Vimeo username"
+  # youtube = "Your YouTube username"
+  # linkedin = "Your LinkedIn username"
+  # medium = "Your Medium username"
+  # strava = "Your Strava userid"
   # Disqus shortname
-  disqus = ""
+  # disqus = ""
   author = "ichi"
-  authorwebsite = "example.com"
-  avatar = "/path/to/avatar"
-  contact = "Your contact link (ex. mailto:foo@example.com)"
-  bio = "Your short bio"
+  authorwebsite = "ichi-h.com"
+  avatar = "/images/ichi.jpg"
+  # contact = "mailto:ichi.h3@gmail.com"
+  bio = "創り続ける人生を選んだ人。音楽とプログラミングができる。この世にないものを創る。"
   # Short subtitle/tagline. This is displayed in the header.
   subtitle = "創り続けること。"
   # Logo image. This is displayed ogp image.
-  logo = "/path/to/logo"
-  favicon = "/path/to/favicon"
+  logo = "/images/ichi.jpg"
+  favicon = "/images/favicon.ico"
 
 [[menu.main]]
-    name = "Blog"
+    name = "Home"
     url = "/"
     weight = 1
 
@@ -68,22 +68,15 @@ googleAnalytics = "Your Google Analytics tracking id"
     url = "/tags/development"
     weight = 4
 
-# [[menu.main]]
-#     parent = "theme"
-#     name = "creating-a-new-theme"
-#     url = "/posts/creating-a-new-theme"
-#     weight = 1
-
-# [[menu.main]]
-#     parent = "theme"
-#     name = "migrate-from-jekyll"
-#     url = "/posts/migrate-from-jekyll"
-#     weight = 2
-
 [[menu.main]]
     name = "Tags"
     url = "/tags"
     weight = 5
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 6
 
 [related]
   # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
@@ -109,3 +102,7 @@ googleAnalytics = "Your Google Analytics tracking id"
   name  = "date"
   weight = 10
   pattern = "2017"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
