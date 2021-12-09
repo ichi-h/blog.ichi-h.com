@@ -1,4 +1,4 @@
-baseurl = "https://blog.ichi-h.com"
+baseurl = "https://blog.ichi-h.com/"
 languageCode = "ja"
 Title = "blog.ichi-h.com"
 theme = "hugo_theme_pickles"
