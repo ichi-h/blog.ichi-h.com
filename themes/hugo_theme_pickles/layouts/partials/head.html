@@ -1,10 +1,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  {{ with .Title | default .Site.Title }}
-  <title>{{ . }}</title>
-  <meta property="og:title" content="{{ . }}" />
-  <meta name="twitter:title" content="{{ . }}" />
+
+  {{ if and .Title (eq .Title "blog.ichi-h.com") }}
+  <title>{{ .Title }}</title>
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  {{ else }}
+  <title>{{ .Title }} - blog.ichi-h.com</title>
+  <meta property="og:title" content="{{ .Title }} - blog.ichi-h.com" />
+  <meta name="twitter:title" content="{{ .Title }} - blog.ichi-h.com" />
   {{ end }}
 
   {{ with .Description | default ($.Param "subtitle") }}
