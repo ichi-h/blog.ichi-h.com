@@ -2,7 +2,7 @@ baseurl = "https://blog.ichi-h.com"
 languageCode = "ja"
 Title = "blog.ichi-h.com"
 theme = "hugo_theme_pickles"
-copyright = "Copyright &copy; 2021 Ichi"
+copyright = "Copyright &copy; 2021 ichi"
 
 HasCJKLanguage = true
 summaryLength = 200
