@@ -1,0 +1,6 @@
+enableGitInfo: true
+
+frontmatter:
+  lastmod:
+    - lastmod
+    - .git

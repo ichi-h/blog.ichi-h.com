@@ -4,6 +4,9 @@ Title = "blog.ichi-h.com"
 theme = "hugo_theme_pickles"
 copyright = "Copyright &copy; 2021 Ichi"
 
+HasCJKLanguage = true
+summaryLength = 200
+
 # Google Analytics API key.
 # googleAnalytics = "Your Google Analytics tracking id"
 
@@ -69,14 +72,19 @@ copyright = "Copyright &copy; 2021 Ichi"
     weight = 4
 
 [[menu.main]]
+    name = "Life"
+    url = "/tags/life"
+    weight = 5
+
+[[menu.main]]
     name = "Tags"
     url = "/tags"
-    weight = 5
+    weight = 6
 
 [[menu.main]]
     name = "Contact"
     url = "/contact"
-    weight = 6
+    weight = 7
 
 [related]
   # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
