@@ -18,7 +18,7 @@ summaryLength = 200
   # hideWordCount = true
   # Hide the reading time on posts and in the posts list
   # hideReadingTime = true
-  custom_css = ["/css/custom.css"]
+  custom_css = ["/css/custom.css", "/css/link-card.css"]
   # Social accounts. Link to these accounts are displayed in the header and
   # footer
   twitter = "ichi_h3"

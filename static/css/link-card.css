@@ -1,0 +1,130 @@
+.link-card{
+    margin: 20px 0;
+    max-width:100%;
+    position: relative;
+    clear:both;
+    min-height:145px;
+    min-width: 300px;
+    box-sizing: border-box;
+    padding:12px;
+    padding-bottom: 6px;
+    border:1px solid #ddd;
+    word-wrap: break-word;
+    border-radius: 5px;
+  }
+  
+  .link-card:after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  .link-card-thumbnail{
+      float: left;
+  }
+  
+  .link-card img.link-card-thumb-image{
+    border:0;
+    width: 178px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .link-card-content{
+    margin-left:180px;
+    padding-left:2%;
+    line-height:120%;
+    margin-bottom: 0.5em;
+  }
+  
+  .link-card-title{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .link-card-title a{
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .link-card-excerpt{
+    font-size: 1.4rem;
+    height: 100%;
+  }
+  
+  .link-card-footer {
+    position:relative;
+    font-size: 0.7rem;
+    width: 100%;
+    clear:both;
+    vertical-align: bottom;
+  }
+
+  .link-card-icon {
+    width: 32px;
+    border: 1px solid #000;
+  }
+  
+  .link-card-footer a{
+      color:#777;
+      text-decoration:none;
+      padding-left:18px;
+  }
+  
+  .link-card-footer img{
+      position:absolute;
+      top:50%;
+      left: 0;
+      -webkit-transform : translateY(-50%);
+      transform : translateY(-50%);
+      width: 16px;
+  }
+  
+  .link-card-hatebu{
+    float: left;
+    margin-right: 7px;
+    position: relative;
+    bottom: -5px;
+  }
+  
+  /* リンクカード（幅が狭い場合）*/
+  @media screen and (max-width: 560px){
+    .article .link-card,
+    .article .entry-content .hover-card{
+      width: 100%;
+    }
+  
+    .link-card-content{
+      margin-left: 0;
+    }
+  
+    .link-card-title a{
+      font-size: 14px;
+      line-height: 120%;
+    }
+  
+    .link-card-excerpt,
+    .link-card-footer{
+      font-size: 11px;
+      line-height: 120%;
+    }
+  
+    #main .link-card,
+    #main .hover-card{
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  
+    img.link-card-thumb-image{
+      width: 80px;
+      height: 80px;
+    }
+  
+    .link-card-content {
+      margin-left: 90px;
+    }
+  }
