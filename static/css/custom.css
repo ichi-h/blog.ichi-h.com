@@ -9,3 +9,28 @@
   color: #088ed6;
   font-weight: bold;
 }
+
+.supplement {
+  color: gray;
+}
+
+.border {
+  border-bottom: 1px dashed;
+}
+
+.medium {
+  font-size: 3rem;
+}
+
+.large {
+  font-size: 5rem;
+}
+
+.center {
+  text-align: center;
+  font-size: initial;
+}
+
+h2 ~ h2 {
+  margin-top: 6rem;
+}
