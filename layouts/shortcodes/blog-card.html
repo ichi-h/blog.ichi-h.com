@@ -1,0 +1,35 @@
+<div class="link-card">
+  <div class="link-card-thumbnail">
+    <a
+      href="{{ .Get "url" }}"
+      class="link-card-thumbnail-link"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><img
+        class="link-card-thumb-image"
+        src="/images/icon_512.png"
+        alt=""
+    /></a>
+  </div>
+  <div class="link-card-content">
+    <div class="link-card-title">
+      <a
+        href="{{ .Get "url" }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ .Get "title" }}</a
+      >
+    </div>
+    <div class="link-card-excerpt">
+      {{ .Get "description" }}
+    </div>
+  </div>
+  <div class="link-card-footer">
+    <a
+      href="{{ .Get "url" }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><img src="/favicon.ico" alt="" />blog.ichi-h.com</a
+    >
+  </div>
+</div>
