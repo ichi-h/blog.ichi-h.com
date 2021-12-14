@@ -1,6 +1,7 @@
 ---
 author: 'ichi'
 date: 2021-04-01
+lastmod: 2021-04-01
 linktitle: Title
 title: Title
 weight: 10
