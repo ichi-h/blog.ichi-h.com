@@ -1,4 +1,4 @@
-{{ if or ( $.Param "medium" ) ( $.Param "twitter" ) ( $.Param "facebook" ) ( $.Param "instagram" ) ( $.Param "github" ) ( $.Param "gitlab" ) ( $.Param "npm" ) ( $.Param "codepen" ) ( $.Param "dribbble" ) ( $.Param "fivehundredpx" ) ( $.Param "flickr" ) ( $.Param "pinterest" ) ( $.Param "tumblr" ) ( $.Param "vimeo" ) ( $.Param "youtube" ) ( $.Param "linkedin" ) ( $.Param "strava" ) }}
+{{ if or ( $.Param "medium" ) ( $.Param "twitter" ) ( $.Param "facebook" ) ( $.Param "instagram" ) ( $.Param "github" ) ( $.Param "gitlab" ) ( $.Param "npm" ) ( $.Param "codepen" ) ( $.Param "dribbble" ) ( $.Param "fivehundredpx" ) ( $.Param "flickr" ) ( $.Param "pinterest" ) ( $.Param "tumblr" ) ( $.Param "vimeo" ) ( $.Param "youtube" ) ( $.Param "linkedin" ) ( $.Param "strava" ) ( $.Param "soundcloud" ) }}
 <ul class="c-links">
   {{ with ($.Param "medium") }}
   <li class="c-links__item">
@@ -166,6 +166,16 @@
       <svg viewBox="0 0 64 64" class="c-links__icon">
         <title>strava</title>
         <use xlink:href="#icon-strava"></use>
+      </svg>
+    </a>
+  </li>
+  {{ end }}
+  {{ with ($.Param "soundcloud") }}
+  <li class="c-links__item">
+    <a href="https://soundcloud.com/{{ . }}" target="_blank">
+      <svg viewBox="0 0 64 64" class="c-links__icon">
+        <title>soundcloud</title>
+        <use xlink:href="#icon-soundcloud"></use>
       </svg>
     </a>
   </li>
