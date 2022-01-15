@@ -1,9 +1,9 @@
 ---
 author: 'ichi'
-date: 2022-01-15
+date: 2022-01-14
 lastmod: 2022-01-15
-linktitle: Windows 11でQTTabBarを導入する方法
-title: Windows 11でQTTabBarを導入する方法
+linktitle: Windows 11にQTTabBarをインストールする方法
+title: Windows 11にQTTabBarをインストールする方法
 weight: 10
 url: /posts/win11_qttabbar
 tags: ['life', 'windows11']
@@ -38,7 +38,7 @@ Windows 11になってからエクスプローラーのUIが変更されたこ�
 
 ### 1. エクスプローラーのUIをWindows 10に戻す
 
-Windows 11では、エクスプローラーの上部から「オプション」が削除されたため、QTTabBarの機能を有効にすることができません。  
+Windows 11では、エクスプローラーの上部から「オプション」が削除されたため、このままではQTTabBarの機能を有効にすることができません。  
 なので、まずはエクスプローラーを旧版のものに戻します。
 
 まず、Win + Rコマンドから「ファイル名を指定して実行」を立ち上げ、「powershell」を入力してPowerShellを起動します。
@@ -73,8 +73,6 @@ reg.exe delete "HKCU\Software\Classes\CLSID\{d93ed569-3b3e-4bff-8355-3c44f6a52bb
 リンクはGoogle Driveへとつながります。
 
 <a class="border" href="https://drive.google.com/file/d/1qPnj13bAMdqzYFj2f-VAOCPd4EXlOIzh/view?usp=sharing" target="_blank" rel="noopener noreferrer">ダウンロード</a>
-
-主な変更点としては、
 
 設定を読み込む場合は、タブバーを右クリックするか、Alt + Oのショートカットキーから「QTTabBar のオプション」を開き、「全般 -> 管理の設定 -> ファイルからインポートする」をクリックし、ダウンロードしたファイルを選択してください。
 
