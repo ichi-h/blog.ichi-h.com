@@ -1,7 +1,7 @@
 ---
 author: 'ichi'
 date: 2022-01-14
-lastmod: 2022-01-15
+lastmod: 2022-01-18
 linktitle: Windows 11にQTTabBarをインストールする方法
 title: Windows 11にQTTabBarをインストールする方法
 weight: 10
@@ -12,17 +12,17 @@ hideReadingTime: true
 draft: false
 ---
 
+## はじめに
+
+Windows11になってからエクスプローラーのUIが変更されたことで、QTTabBarのインストールが簡単にはできなくなりました。ので、今回はそのやり方の共有となります。
+
 ## 注意
 
 <span class="positive">この方法ではレジストリに対して一時的に変更を加えます。2021年12月末に検証した際は成功しましたが、今後のWindowsのアップデートによっては利用できなくなる可能性があります。</span>
 
-## はじめに
-
-Windows 11になってからエクスプローラーのUIが変更されたことで、QTTabBarの導入が若干面倒になりました。ので、今回はその方法の共有となります。
-
 ## QTTabBarとは？
 
-簡単に言えば、エクスプローラーにタブ機能が追加されます。  
+簡単に言えば、<u>エクスプローラーにタブ機能を追加できる拡張機能</u>です。  
 他にもいろいろと便利機能があるのですが、それに関してはまた別の機会に。
 
 <div class="link-card"><div class="link-card-thumbnail"><a href="http://qttabbar-ja.wikidot.com/" class="link-card-thumbnail-link" target="_blank" rel="noopener noreferrer"><img class="link-card-thumb-image" src="" alt=""></a></div><div class="link-card-content"><div class="link-card-title"><a href="http://qttabbar-ja.wikidot.com/" target="_blank" rel="noopener noreferrer">QTTabBar - QuizoApps</a></div><div class="link-card-excerpt"></div></div><div class="link-card-footer"><a href="http://qttabbar-ja.wikidot.com/" target="_blank" rel="noopener noreferrer"><img src="https://www.google.com/s2/favicons?domain=http://qttabbar-ja.wikidot.com/" alt="">qttabbar-ja.wikidot.com</a></div></div>
@@ -38,13 +38,13 @@ Windows 11になってからエクスプローラーのUIが変更されたこ�
 
 ### 1. エクスプローラーのUIをWindows 10に戻す
 
-Windows 11では、エクスプローラーの上部から「オプション」が削除されたため、このままではQTTabBarの機能を有効にすることができません。  
+Windows 11では、エクスプローラーの上部にあったメニュー的なもの（リボン）から「オプション」が削除されたため、このままではQTTabBarの機能を有効にすることができません。  
 なので、まずはエクスプローラーを旧版のものに戻します。
 
-まず、Win + Rコマンドから「ファイル名を指定して実行」を立ち上げ、「powershell」を入力してPowerShellを起動します。
+はじめに、Win + Rコマンドから「ファイル名を指定して実行」を立ち上げ、「powershell」を入力してPowerShellを起動します。
 
 その後、以下のコマンドを貼り付けて実行してください。  
-（ここでレジストリを操作しますが、最後に元に戻します）
+（ここでレジストリを操作しますが、最後に元に戻せます）
 
 ```powershell
 reg.exe add "HKCU\Software\Classes\CLSID\{d93ed569-3b3e-4bff-8355-3c44f6a52bb5}\InprocServer32" /f /ve
@@ -54,7 +54,7 @@ reg.exe add "HKCU\Software\Classes\CLSID\{d93ed569-3b3e-4bff-8355-3c44f6a52bb5}\
 
 ### 2. QTTabBarを有効にする
 
-あとは通常のQTTabBarの設定法と同じです。  
+あとは通常のQTTabBarの設定と同じです。  
 エクスプローラーのオプションから「QT タブ バー」を有効にすることで、エクスプローラーにタブが表示されます。
 
 ### 3. エクスプローラーのUIを元に戻す
@@ -69,7 +69,7 @@ reg.exe delete "HKCU\Software\Classes\CLSID\{d93ed569-3b3e-4bff-8355-3c44f6a52bb
 ## おまけ
 
 私のQTTabBarの設定を共有いたします。  
-ゴリゴリにチューニングしているわけではありませんが、直感的に使える設定には仕上がっていると思いますので、ぜひお試しください。  
+ゴリゴリにチューニングしているわけではありませんが、直感的に使える設定にはなっていると思いますので、ぜひお試しください。  
 リンクはGoogle Driveへとつながります。
 
 <a class="border" href="https://drive.google.com/file/d/1qPnj13bAMdqzYFj2f-VAOCPd4EXlOIzh/view?usp=sharing" target="_blank" rel="noopener noreferrer">ダウンロード</a>
